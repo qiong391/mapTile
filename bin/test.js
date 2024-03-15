@@ -1,7 +1,7 @@
-import { createCanvas, loadImage } from 'canvas'
-import express from 'express'
-// const { createCanvas, loadImage } = require('canvas')
-// const { express } = require('express')
+// import { createCanvas, loadImage } from 'canvas'
+// import express from 'express'
+const { createCanvas, loadImage } = require('canvas')
+const express = require('express')
 console.time('app')
 
 const app = express()
