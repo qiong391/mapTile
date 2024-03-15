@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/test.js",
+    "webpack:dev": "webpack --config=webpack.config.js --mode=development",
+    "webpack:prod": "webpack --config=webpack.config.js --mode=production"
   },
   "dependencies": {
     "canvas": "^2.11.2",
@@ -13,5 +15,9 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   }
 }
